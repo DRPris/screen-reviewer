@@ -25,7 +25,7 @@
 ### 1. 安装
 
 ```bash
-git clone https://github.com/DPRris/screen-reviewer.git
+git clone https://github.com/DRPris/screen-reviewer.git
 cd screen-reviewer
 bash install.sh
 ```
