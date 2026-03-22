@@ -25,9 +25,8 @@
 ### 1. 安装
 
 ```bash
-git clone https://github.com/你的用户名/screen-reviewer.git
+git clone https://github.com/DPRris/screen-reviewer.git
 cd screen-reviewer
-# 把"你的用户名"替换成你的 GitHub 用户名
 bash install.sh
 ```
 
