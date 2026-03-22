@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# 编译产物
+scripts/ocr_tool
+
+# macOS
+.DS_Store
+._*
+
+# IDE
+.vscode/
+.idea/
+
+# Skill 内部 symlink（install.sh 创建，不需要提交）
+skill/scripts
+skill/templates
