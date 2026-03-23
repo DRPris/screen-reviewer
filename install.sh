@@ -54,20 +54,15 @@ deactivate
 echo ""
 echo "[5/6] 注册 Agent Skill..."
 mkdir -p "$(dirname "$CURSOR_SKILL")"
-rm -f "$CURSOR_SKILL"
-ln -sfn "$REPO_DIR/skill" "$CURSOR_SKILL"
-echo "  ✅ Cursor: $CURSOR_SKILL → skill/"
-
-# Skill 目录需要包含 scripts 和 templates 的引用
-# 创建 skill 内部的 symlink 指向 repo 中的实际文件
-ln -sfn "$REPO_DIR/scripts" "$REPO_DIR/skill/scripts"
-ln -sfn "$REPO_DIR/templates" "$REPO_DIR/skill/templates"
+rm -rf "$CURSOR_SKILL"
+ln -sfn "$REPO_DIR" "$CURSOR_SKILL"
+echo "  ✅ Cursor: $CURSOR_SKILL"
 
 # ── 6. 注册 Codex Skill ─────────────────────
 mkdir -p "$(dirname "$CODEX_SKILL")"
-rm -f "$CODEX_SKILL"
-ln -sfn "$REPO_DIR/skill" "$CODEX_SKILL"
-echo "  ✅ Codex:  $CODEX_SKILL → skill/"
+rm -rf "$CODEX_SKILL"
+ln -sfn "$REPO_DIR" "$CODEX_SKILL"
+echo "  ✅ Codex:  $CODEX_SKILL"
 
 echo ""
 echo "╔══════════════════════════════════════╗"

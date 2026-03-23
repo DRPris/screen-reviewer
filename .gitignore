@@ -17,6 +17,3 @@ scripts/ocr_tool
 .vscode/
 .idea/
 
-# Skill 内部 symlink（install.sh 创建，不需要提交）
-skill/scripts
-skill/templates
